@@ -1,0 +1,33 @@
+{
+    "name": "Prajal-Bishwakarma-Blog",
+    "version": "0.0.1",
+    "description": "Prajal Bishwakarma's Blog",
+    "authors": [
+        {
+            "name": "Prajal Bishwakarma",
+            "email": "prajal.b@gmail.com"
+        }
+    ],
+    "scripts": {
+        "webpack": "webpack --config webpack.config.js --mode=production",
+        "wpd": "webpack --config webpack.config.js -w --mode=development",
+        "dev": "bundle exec jekyll serve -w"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.3.4",
+        "@babel/preset-env": "^7.3.4",
+        "babel-loader": "^8.0.5",
+        "css-loader": "^2.1.1",
+        "imports-loader": "^0.8.0",
+        "style-loader": "^0.23.1",
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.2.3"
+    },
+    "dependencies": {
+        "canvas": "^2.3.1",
+        "d3": "^5.9.1",
+        "gsap": "^2.1.2",
+        "scrollmagic": "^2.0.6"
+    }
+}

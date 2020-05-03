@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prajal Bishwakarma</title>
+    <description>My blog</description>
+    <link>https://www.prajal.xyz</link>
+    <atom:link href="https://www.prajal.xyz/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Do I listen to sadboi<sup>TM</sup> music?</title>
+        <description>&lt;h2 id=&quot;three&quot;&gt;THREE.&lt;/h2&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://www.prajal.xyz/assets/css/sadboi.css&quot; /&gt;
+
+&lt;p&gt;That’s how many people have approached me, worried because they peep’d my spotify feed to find me listening to Blonde by Frank Ocean on repeat for &lt;em&gt;hours&lt;/em&gt;. After the third person brought it up, I started questioning whether or not I had a melancholic taste in music.&lt;/p&gt;
+
+&lt;p&gt;The tipping point came when one of my friends (s/o KB) described a Spotify playlist of mine as &lt;strong&gt;sadboi&lt;/strong&gt; music. Wait what? What does that even &lt;em&gt;mean&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;Here’s how urbandictionary described a sadboi:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;One who is often upset by things in the world.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Talk alot and get in their feels for the most unexpected of situations.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And my personal favorite:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Young male who spends most of his time in the feels, listening to artists like Drake and Bryson Tiller.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Wow. Gotta say, I was a little offended. Mostly by the insinuation that I spent most of my time listening to Drake. So naturally, I went about figuring out if I really am a sadboi.&lt;/p&gt;
+
+&lt;p&gt;First, I requested my data from Spotify. &lt;a href=&quot;https://support.spotify.com/us/article/data-rights-and-privacy-settings/&quot;&gt;Here’s&lt;/a&gt; where you can read about your data rights and request your own data from Spotify. (Highly recommend reading more into data privacy but that’s another post entirely.)&lt;/p&gt;
+
+&lt;p&gt;A few weeks later I received a json file with all of the songs that had played on my spotify account over the previous 90 days. Obviously you can’t categorize a large facet of someone’s personality based on just 90 days of data, but it’ll serve as a nice little window into my alleged sadboi mind.&lt;/p&gt;
+
+&lt;p&gt;Here’s a quick summary:&lt;/p&gt;
+
+&lt;table class=&quot;inner-borders&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Description&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Value&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Songs played&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;5730&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Unique songs played&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1548&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Total streaming time&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;257h 29m 47s&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Next up, I used the &lt;a href=&quot;https://docs.genius.com/&quot;&gt;Genius API&lt;/a&gt; to pull the song lyrics. I figured if the lyrics were inherently sad, the overall song was probably also sad. I ran each line of the song through the TextBlob sentiment analysis package. Then I averaged the sentiment of each line to get a sentiment score for each song. Here’s what the sentiment distribution looks like:&lt;/p&gt;
+
+&lt;div id=&quot;histogramTrigger&quot;&gt; &lt;/div&gt;
+&lt;div id=&quot;histogram&quot;&gt;&lt;/div&gt;
+&lt;script src=&quot;../assets/javascript/sadboi_sentiment_bundle.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;On a scale of -1 to 1 the mean sentiment for my streaming history was 0.022 with a standard deviation of 0.061. According to the lyrics, I’m a fairly neutralboi. Now obviously there’s more to songs than the lyrics. Take “Hey Ya” by OutKast for example. The song’s production makes it sound dancy and happy but the lyrics are actually about a failing relationship:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;span style=&quot;color:red&quot;&gt;You think you’ve got it&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color:red&quot;&gt;Oh, you think you’ve got it&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color:red&quot;&gt;But got it just don’t get it when there’s nothin’ at all&lt;/span&gt;&lt;br /&gt;
+We get together&lt;br /&gt;
+Oh, we get together&lt;br /&gt;
+&lt;span style=&quot;color:red&quot;&gt;But separate’s always better when there’s feelings involved&lt;/span&gt;&lt;br /&gt;
+Know what they say -its&lt;br /&gt;
+Nothing lasts forever!&lt;br /&gt;
+Then what makes it, then what makes it&lt;br /&gt;
+Then what makes it, then what makes it&lt;br /&gt;
+Then what makes love the exception?&lt;br /&gt;
+So why, oh, why, oh&lt;br /&gt;
+Why, oh, why, oh, why, oh&lt;br /&gt;
+&lt;span style=&quot;color:red&quot;&gt;Are we still in denial when we know we’re not happy here&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So the question becomes, how do we categorize the songs in a way that captures more than just the words? How do we quantify the “happiness” and “sadness” in a song? I found an answer in James A. Russel’s 1980 paper&lt;sup&gt;1&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;div id=&quot;russellTrigger&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;russellText&quot;&gt;
+    &lt;p id=&quot;test1&quot; class=&quot;text-trigger&quot;&gt;He proposed that &quot;affective states&quot; i.e. the experience of emotion, can be described by a two-dimensional space.&lt;/p&gt;
+    &lt;p id=&quot;axisReveal&quot; class=&quot;text-trigger&quot;&gt;In Russel's model, the x-axis quantifies &quot;valence&quot; or the pleasure/displeasure dimension. The y-axis quantifies the &quot;arousal&quot; or high-energy/low-energy dimensional.&lt;/p&gt;
+    &lt;p id=&quot;happyReveal&quot; class=&quot;text-trigger&quot;&gt;Therefore, a point in the high energy, high valence quadrant would be described as &quot;happy&quot;. &lt;/p&gt;
+    &lt;p id=&quot;sadReveal&quot; class=&quot;text-trigger&quot;&gt;Conversely, a low energy, low valence point would be considered &quot;sad&quot;.&lt;/p&gt;
+    &lt;p id=&quot;angryReveal&quot; class=&quot;text-trigger&quot;&gt;Points in the high energy, low valence quadrant would be considered &quot;distressed&quot;. For our purposes, we'll call these &quot;angry&quot;.&lt;/p&gt;
+    &lt;p id=&quot;relaxedReveal&quot; class=&quot;text-trigger&quot;&gt;Finally, the low energy, high valence quadrant describes &quot;relaxed&quot; states.&lt;/p&gt;
+    &lt;p id=&quot;dataReveal&quot; class=&quot;text-trigger&quot;&gt;Spotify conveniently provides valence and energy values in their API. Here's how my streaming history looks:&lt;/p&gt;
+    &lt;p id=&quot;quadrantCountReveal&quot; class=&quot;text-trigger&quot;&gt; There are roughly the same number of happy, sad, and angry songs in my history.&lt;/p&gt;
+    &lt;p id=&quot;averageQuadrantsReveal&quot; class=&quot;text-trigger&quot;&gt; I averaged the valence and energy values for each quadrant; here's what that looks like:&lt;/p&gt;
+    &lt;p id=&quot;allAverageReveal&quot; class=&quot;text-trigger&quot;&gt; Here's what the average position of all of my songs looks like. On average, seems like I'm a slightly angry boi.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&quot;russellGraphic&quot;&gt;&lt;/div&gt;
+&lt;div style=&quot;height: 50%&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;russellEndTrigger&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;It’s not a rigorous, scientifically sound conclusion, but based on a sample of my streaming history, I’m not a sadboi. But then again, I definitely had Blonde by Frank Ocean playing on repeat while writing this :no_mouth:. If liking Frank Ocean means I’m a sadboi, then so be it, I’m a sadboi&lt;sup&gt;TM&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;sup&gt;1&lt;/sup&gt; Russell, James A. “A Circumplex Model of Affect.”&lt;i&gt;Journal of Personality and Social Psychology&lt;/i&gt;, 39, no. 6, (1980). 1161-1178. 
+&lt;script src=&quot;../assets/javascript/sadboi_russell_bundle.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 04 Mar 2019 00:03:00 +0000</pubDate>
+        <link>https://www.prajal.xyz/posts/SadBoi</link>
+        <guid isPermaLink="true">https://www.prajal.xyz/posts/SadBoi</guid>
+      </item>
+    
+  </channel>
+</rss>
