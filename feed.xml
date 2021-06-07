@@ -3,14 +3,14 @@
   <channel>
     <title>Prajal Bishwakarma</title>
     <description>My blog</description>
-    <link>https://www.prajal.xyz</link>
-    <atom:link href="https://www.prajal.xyz/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.prajal.me</link>
+    <atom:link href="https://www.prajal.me/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Do I listen to sadboi<sup>TM</sup> music?</title>
         <description>&lt;h2 id=&quot;three&quot;&gt;THREE.&lt;/h2&gt;
 
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://www.prajal.xyz/assets/css/sadboi.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://www.prajal.me/assets/css/sadboi.css&quot; /&gt;
 
 &lt;p&gt;That’s how many people have approached me, worried because they peep’d my spotify feed to find me listening to Blonde by Frank Ocean on repeat for &lt;em&gt;hours&lt;/em&gt;. After the third person brought it up, I started questioning whether or not I had a melancholic taste in music.&lt;/p&gt;
 
@@ -113,8 +113,8 @@ Why, oh, why, oh, why, oh&lt;br /&gt;
 &lt;script src=&quot;../assets/javascript/sadboi_russell_bundle.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 04 Mar 2019 00:03:00 +0000</pubDate>
-        <link>https://www.prajal.xyz/posts/SadBoi</link>
-        <guid isPermaLink="true">https://www.prajal.xyz/posts/SadBoi</guid>
+        <link>https://www.prajal.me/posts/SadBoi</link>
+        <guid isPermaLink="true">https://www.prajal.me/posts/SadBoi</guid>
       </item>
     
   </channel>
